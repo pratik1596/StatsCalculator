@@ -1,11 +1,16 @@
 language: python
 python:
   - "3.7"
+  - "3.8"
+  - "3.9"
 install:
   - pip install -r requirements.txt
 # command to run tests
 script:
   - python -m  unittest discover -s  Tests
+
+env:
+  - PYTHONPATH="${PYTHONPATH}:Package1:Package2:Package3"
 
 branches:
   only:
