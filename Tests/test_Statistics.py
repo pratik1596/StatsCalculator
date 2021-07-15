@@ -47,7 +47,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_variance(self):
         data = getSample(self.getData(),10)
-        self.assertAlmostEqual(math.floor((self.statistics.variance(data))), math.floor((statistics.variance(data))))
+        self.assertAlmostEqual((int)((self.statistics.variance(data))), (int)((statistics.variance(data))))
 
     def test_standard_deviation(self):
         data = getSample(self.getData(), 10)
