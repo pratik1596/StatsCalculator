@@ -1,4 +1,20 @@
-# StatsCalculator
+# __StatsCalculator__
+
+## __Description:__
+The following project is a Statistical Calculator that calculates functions such as Mean, Mode, Standard Deviation, Variance, Median.
+
+## __Project Tasks and Outline:__
+1. Statistical Calculator with basic functions(Mean, Mode, Variance, Median, Standard Deviation).
+2. Using Random numbers as input with random number generator.
+3. Testing Project with Travis CI.
+4. Unit tests to check valid input.
+5. Using classes instead of static methods.
+6. Exception Handling.
+
+Project Output:
+
+
+## __Travis Build Passing Screenshots__
 
 [![Build Status](https://travis-ci.com/pratik1596/StatsCalculator.svg?branch=master)](https://travis-ci.com/pratik1596/StatsCalculator)
 
