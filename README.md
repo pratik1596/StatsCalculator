@@ -1,4 +1,4 @@
-# __StatsCalculator__
+# __IS601 Project 2 - Statistical Calculator__
 
 ## __Description:__
 The following project is a Statistical Calculator that calculates functions such as Mean, Mode, Standard Deviation, Variance, Median.
