@@ -1,26 +1,26 @@
 import random
 from random import uniform
 
-def getRandomInt(low, high):
+def RandomInt(low, high):
     return random.randint(low, high)
 
-def getRandomFloat(low, high):
+def RandomFloat(low, high):
     return uniform(low, high)
 
-def getRandomIntSeed(low, high, seed):
+def IntSeed(low, high, seed):
     random.seed(seed)
-    return getRandomInt(low, high)
+    return RandomInt(low, high)
 
-def getRandomNumbersInt(low, high, seed, total):
+def RandomIntegers(low, high, seed, total):
     data = []
     for i in range(total):
         random.seed(seed)
         data.append(random.randint(low, high))
     return data
 
-def getRandomNumbersFloat(low, high, seed, total):
+def RandomFloats(low, high, seed, total):
     data = []
     for i in range(total):
         random.seed(seed)
-        data.append(getRandomFloat(low, high))
+        data.append(RandomFloat(low, high))
     return data
