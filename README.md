@@ -11,8 +11,8 @@ The following project is a Statistical Calculator that calculates functions such
 5. Using classes instead of static methods.
 6. Exception Handling.
 
-Project Output:
-
+## __Project Output:__
+<img width="1110" alt="Screen Shot 2021-07-14 at 11 24 08 PM" src="https://user-images.githubusercontent.com/83378087/125724741-31292a17-b115-4cd6-92a7-13e2d3418a42.png">
 
 ## __Travis Build Passing Screenshots__
 
