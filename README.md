@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/pratik1596/StatsCalculator.svg?branch=master)](https://travis-ci.com/pratik1596/StatsCalculator)
 # __IS601 Project 2 - Statistical Calculator__
 
 ## __Description:__
@@ -15,8 +16,6 @@ The following project is an extension of the Calculator program with statistical
 <img width="1110" alt="Screen Shot 2021-07-14 at 11 24 08 PM" src="https://user-images.githubusercontent.com/83378087/125724741-31292a17-b115-4cd6-92a7-13e2d3418a42.png">
 
 ## __Travis Build Passing Screenshots__
-
-[![Build Status](https://travis-ci.com/pratik1596/StatsCalculator.svg?branch=master)](https://travis-ci.com/pratik1596/StatsCalculator)
 
 <img width="1117" alt="Screen Shot 2021-07-14 at 11 16 10 PM" src="https://user-images.githubusercontent.com/83378087/125723809-c1bab7de-a41f-4660-b15d-e0f105ce4fdd.png">
 
