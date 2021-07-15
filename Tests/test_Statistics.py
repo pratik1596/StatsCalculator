@@ -3,8 +3,7 @@ import statistics
 from Statistics.Statistics import Statistics
 from CSVReader.CSVReader import CSVReader
 from Statistics.GetSample import getSample
-import math
-
+import Statistics.RandomGenerator as tools
 
 class MyTestCase(unittest.TestCase):
 
@@ -41,13 +40,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.median(data), statistics.median(data))
 
     def test_mode(self):
-        data = getSample(self.getData(),20)
-        print(self.statistics.mode(data))
-        self.assertEqual(self.statistics.mode(data), statistics.mode(data))
+        self.assertEqual(self.statistics.mode(tools.getRandomNumbersInt(1,100,50,10)),
+                         statistics.mode(tools.getRandomNumbersInt(1,100,50,10)))
 
     def test_variance(self):
         data = getSample(self.getData(),10)
-        self.assertAlmostEqual((int)((self.statistics.variance(data))), (int)((statistics.variance(data))))
+        self.assertEqual((self.statistics.variance(data)), (statistics.variance(data)))
 
     def test_standard_deviation(self):
         data = getSample(self.getData(), 10)
@@ -60,10 +58,18 @@ class MyTestCase(unittest.TestCase):
             num = data.append((int)(row['Value']))
         return data
 
+    def test_getRandomSeed(self):
+        value1 = tools.getRandomIntSeed(1,100,50)
+        value2 = tools.getRandomIntSeed(1, 100, 50)
+        self.assertEqual(value1, value2)
+
+    def test_getRandomSeedList(self):
+        value1 = tools.getRandomNumbersInt(1,100,50,10)
+        value2 = tools.getRandomNumbersInt(1,100,50,10)
+        self.assertEqual(value1, value2)
 
 def test_results_property(self):
     self.assertEqual(self.calculator.result, 0)
-
 
 if __name__ == '__main__':
     unittest.main()
